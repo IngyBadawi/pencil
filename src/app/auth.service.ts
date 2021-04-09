@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore } from '@angular/fire/firestore';
-
+import { Router } from "@angular/router";
 // You don't need to import firebase/app either since it's being imported above
 import 'firebase/auth' ;
 import 'firebase/firestore';
@@ -16,6 +16,7 @@ export class AuthService {
 
   constructor(
     public afAuth: AngularFireAuth, // Inject Firebase auth service
+    public router: Router, 
   ) { }
 
   // Sign in with Google
@@ -27,7 +28,8 @@ export class AuthService {
   AuthLogin(provider) {
     return this.afAuth.signInWithPopup(provider)
     .then((result) => {
-        console.log('You have been successfully logged in!')
+        console.log('You have been successfully logged in!');
+        this.router.navigate(['/dashboard']);
     }).catch((error) => {
         console.log(error)
     })
