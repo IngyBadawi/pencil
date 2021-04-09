@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pencil-36968": {
+      "hosting": {
+        "pencil": [
+          "pencil-36968"
+        ]
+      }
+    }
+  }
+}
