@@ -2,12 +2,28 @@
 $google-blue: #4285f4;
 $button-active-blue: #1669F2;*/
 
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+  .welcome{
+    font-family: 'Gloria Hallelujah', cursive !important;
+    font-size: 70px;
+    text-align: center;
+  }
+
 .google-btn {
-  width: 184px;
+  width: 200px;
   height: 42px;
   background-color: #4285f4;
   border-radius: 2px;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+  margin:0 auto;
+  display:block;
+  
+}
+.google-btn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+  background: #1669F2;
 }
   .google-icon-wrapper {
     position: absolute;
@@ -20,6 +36,7 @@ $button-active-blue: #1669F2;*/
   }
   .google-icon {
     position: absolute;
+    vertical-align: middle;
     margin-top: 11px;
     margin-left: 11px;
     width: 18px;
@@ -34,12 +51,12 @@ $button-active-blue: #1669F2;*/
     font-family: "Roboto";
   }
   
-  :hover {
-    box-shadow: 0 0 6px #4285f4;
+  .gif{
+    height: 450px;
+    text-align: center;
+    align-items: center;
   }
-  :active {
-    background: #1669F2;
-  }
+  
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
