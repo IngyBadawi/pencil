@@ -9,17 +9,27 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthService } from './auth.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+  ],
+  exports: [
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
