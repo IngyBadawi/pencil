@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-material-components/color-picker": "^5.0.2",
     "@angular/animations": "~10.1.4",
     "@angular/cdk": "^10.2.7",
     "@angular/common": "~10.1.4",
@@ -23,10 +24,12 @@
     "@angular/platform-browser-dynamic": "~10.1.4",
     "@angular/router": "~10.1.4",
     "bootstrap": "^4.6.0",
+    "fabric": "^4.4.0",
     "firebase": "^7.0 || ^8.0",
     "firebaseui": "^4.8.0",
     "firebaseui-angular": "^5.1.2",
     "jquery": "^3.6.0",
+    "ngx-color-picker": "^11.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

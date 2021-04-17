@@ -1,0 +1,25 @@
+<button type="button" (click) = "done() "class="btn btn-success" style="width: 33%;">Done</button>
+<button type="button" (click) = "clear()" class="btn btn-danger" style="width: 33%;">Clear Canvas</button>
+<button type="button" (click)="restore()" class="btn btn-info" style="width: 33%;">Restore</button>
+<br><br>
+<tr>
+    <th style="width: 50%">Colour Palette</th>
+    <th style="width: 25%">Drawing Mode</th>
+</tr>
+<tr>
+    <th style="width: 50%">
+        <input [(colorPicker)]="val" 
+        [style.background]="val" 
+        (colorpickerchange)="change_colour()" 
+        (cpSliderChange)="change_colour()" />
+    </th>
+    <th style="width: 25%">
+        <label class="switch">
+            <input (click) = "toggleDrawing()" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </th>
+</tr>
+
+<br><hr>
+<canvas width="1400" height="600" style="border: 1px solid #cccccc;" id="canvas"></canvas>

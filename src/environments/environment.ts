@@ -12,6 +12,7 @@ export const environment = {
     storageBucket: "pencil-36968.appspot.com",
     messagingSenderId: "282709418789",
     appId: "1:282709418789:web:176a4533e9df085e8ff0cc",
+    databaseURL: "https://pencil-36968-default-rtdb.europe-west1.firebasedatabase.app/",
     measurementId: "G-VT6YQ0YZVY"
   }
 };

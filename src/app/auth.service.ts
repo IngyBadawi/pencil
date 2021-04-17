@@ -3,6 +3,8 @@ import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore,AngularFirestoreDocument} from '@angular/fire/firestore';
 import { Router } from "@angular/router";
 import { User } from "../app/user";
+import {DataService} from "../app/data.service";
+
 // You don't need to import firebase/app either since it's being imported above
 import 'firebase/auth' ;
 import 'firebase/firestore';
@@ -18,7 +20,7 @@ export class AuthService {
   constructor(
     public afAuth: AngularFireAuth, // Inject Firebase auth service
     public router: Router,
-    public afs: AngularFirestore,
+    public afs: AngularFirestore
   ) { 
     this.afAuth.authState.subscribe(user => {
       if (user) {
