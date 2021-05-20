@@ -1,7 +1,7 @@
 # Pencil
 
 ## Try the app!
-You can try the app [here](/pencil-36968.web.app)!
+You can try the app [here](https://pencil-36968.web.app/login)!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 
